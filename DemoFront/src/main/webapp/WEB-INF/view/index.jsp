@@ -18,8 +18,7 @@
 
 </head>
 
-<body>
-
+<body ng-app="myApp">
  <%@include file="templates/header.jsp" %>
   <!-- Page Content -->
   <div class="container" style="margin-bottom:60px;margin-top:60px;">
@@ -34,8 +33,12 @@
       <c:if test="${userClickedManageProd==true}">
 		<%@include file="manageProduct.jsp" %>
 	</c:if>
-
-  </div>
+<c:if test="${userClickedRegister==true}">
+        <%@include file="personalInfo.jsp" %>
+</c:if>
+<c:if test="${userClickedSaveUser==true}">
+        <%@include file="addressDetails.jsp" %>
+</c:if>
   <!-- /.container -->
 
  <%@include file="templates/footer.jsp" %> 
@@ -44,7 +47,8 @@
   <script src="${cp}/assets/js/jquery-3.3.1.slim.min.js"></script>
   <script src="${cp}/assets/js/popper.min.js"></script>
   <script src="${cp}/assets/js/bootstrap.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="${cp}/assets/js/myApp.js"></script>
 </body>
 
 </html>
