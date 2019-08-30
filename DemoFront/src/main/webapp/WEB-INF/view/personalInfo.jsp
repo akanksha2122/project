@@ -1,5 +1,6 @@
 <div class="container">
 	<div class="row">
+		<span style="color:red">${error}</span>
 		<div class="col-lg-12">
 			<form:form modelAttribute="user" action="${cp}/register" method="post" class="form-horizontal">
 				<fieldset>

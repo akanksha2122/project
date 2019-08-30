@@ -48,6 +48,7 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                <a href="${cp}/cart/addToCart/${product.id}" class="btn btn-primary">Buy</a>
               </div>
             </div>
           </div>

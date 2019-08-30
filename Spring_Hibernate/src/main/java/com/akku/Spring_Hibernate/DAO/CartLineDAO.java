@@ -26,6 +26,8 @@ public interface CartLineDAO {
 	
 	// adding order details
 	boolean addOrderDetail(OrderDetail orderDetail);
+	public boolean addCart(Cart cart);
+	public boolean deleteCartItem(int id);
 
 	
 }

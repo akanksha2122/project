@@ -39,6 +39,14 @@
 <c:if test="${userClickedSaveUser==true}">
         <%@include file="addressDetails.jsp" %>
 </c:if>
+<c:if test="${userClickedLogin==true}">
+        <%@include file="login.jsp" %>
+</c:if>
+
+<c:if test="${userClickedViewCart==true}">
+        <%@include file="cart.jsp" %>
+</c:if>
+
   <!-- /.container -->
 
  <%@include file="templates/footer.jsp" %> 
